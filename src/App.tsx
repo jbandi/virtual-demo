@@ -19,9 +19,8 @@ let allItems: Item[] = Array.from(Array(50).keys()).map((i) => ({
 function addItemInBackend() {
     allItems = [{
         id: crypto.randomUUID(),
-        data: `Data ${allItems.length + i} - - ${faker.internet.email()}`
+        data: `Data ${allItems.length} - - ${faker.internet.email()}`
     }, ...allItems];
-    i++;
 }
 
 function fetchItemSlice(itemId: string) {
